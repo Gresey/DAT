@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #445fd2;
+            height: auto;
+            width: auto;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+       
+        
+        #username, #Email, #number, #PassWord, #select1 {
+            color: white; /* Change text color to white */
+            border-color: white;
+            border-radius: 100px;
+            height: 30px;
+            width: 300px;
+        }
+        #username::placeholder, #Email::placeholder, #number::placeholder, #PassWord::placeholder {
+            color: white; /* Change placeholder text color to white */
+        }
+        select {
+            border-color: rgb(42, 0, 0);
+            border: 2px solid;
+            border-radius: 5px;
+            height: 35px;
+            width: 310px;
+        }
+        #send-req {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: transparent;
+            border-radius: 100px;
+            height: 35px;
+            width: 310px;
+        }
+        #Login {
+            border-color: black;
+            color: #838cb7;
+            border: transparent;
+            font-size: large;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <center>
+            <img src="signup.png"><br><br>
+            <input type="text" id="username" name="username" placeholder="  Username" />
+            <br/> <br/>
+            <input type="email" id="Email" name="Email" placeholder="  Email" />
+            <br/> <br/>
+            <input type="text" id="number" name="number" placeholder="  Enter OTP" maxlength="5" />
+            <br/> <br/>
+            <input type="password" id="PassWord" name="PassWord" placeholder="  Password" />
+            <br/> <br/>
+            <select name="select1" id="select1">
+                <option value="none" selected disabled hidden>Signing up as</option>
+                <option value="Coordinator">Coordinator</option>
+                <option value="Head of Department">Head of Department</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Personal Assistance">Personal Assistance</option>
+            </select>
+            <br/> <br/>
+            <a href="otp.html"><input id="send-req" type="button" value="Send Request"></a>
+            <br/> <br/>
+            <div>
+                <a href="login.html" style="text-decoration: none;">Login</a>
+            </div>
+        </center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!-- Create a new password -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Document </title>
+
+        <style>
+
+            *{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: #e8e8e8;
+            }
+            h2{
+                color: #445df2;
+            }
+
+            img
+            {
+                height:100%;
+                width: 100%;
+            
+            }
+
+            input
+            {
+                border-radius: 50px;
+                width: 50%;
+            }
+            
+            #id1{
+                padding: 10px;
+                border-radius: 50px;
+                border-color: transparent ;
+                background-color: #455df2;
+
+            }
+
+            #id1:hover{
+                background-color: #445df2;
+                font-size: medium;
+                color:white;
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <center> 
+
+            <div>
+
+                <img src="resetpass.png" alt="">
+                <h2>Reset Password</h2>
+                <!-- Password  -->
+                <label for="Pass1" class="form-label">New password:</label>
+                <input type="email" class="form-control" id="Pass1" placeholder="Enter your new password"> <br />
+                <br />
+                <label for="Pass2" class="form-label">Confirm Password:</label>
+                <input id="Pass2" type="text" placeholder="Enter OTP" maxlength="5"><br><br>
+                <!--
+                <p> <label for="Pass1"> New Password : </label> <p> <br>
+                <input type="password" id="Pass1" placeholder="Enter your New Password" />   <br/><br/>
+
+                <b> <label for="Pass2"> Confirm Password : </label> </b> <br>
+                <input type="password" id="Pass2" placeholder="Confirm Password" />   <br/><br/>  -->
+
+               <a href="login.html"><input id="id1" type="button" value="Reset Password" /></a> 
+                
+            </div>
+
+        </center>
+
+    </body>
+
+</html>

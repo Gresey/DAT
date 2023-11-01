@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afterlogin</title>
+
+  <style>
+    body {
+      background-color: #e8e8e8;
+      color: #0c238a;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      height: 100%;
+      width: 100%;
+    }
+
+    #Second,
+    #Third {
+      border: none;
+      /* Set border to none to remove it */
+      width: 200px;
+      height: 35px;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    select {
+      height: 30px;
+      width: 200px;
+      border-radius: 50px;
+    }
+
+    .container {
+      border-color: rgb(251, 243, 243);
+      border-radius: 100px;
+      height: 30px;
+      width: 300px;
+    }
+
+    select:hover {
+      background-color: #fafafa;
+      color: rgb(0, 0, 0);
+      border-color: black;
+      border-radius: 100px;
+      height: 30px;
+      width: 300px;
+    }
+
+    #Login {
+      border-color: #445fd2;
+      color: #ffffff;
+      border: transparent;
+      font-size: large;
+      background-color: #445fd2;
+            color: rgb(255, 255, 255);
+            border: transparent;
+            border-radius: 010px;
+            height: 35px;
+            width: 85px;
+    }
+  </style>
+</head>
+<body>
+
+  <center>
+    <div class="container">
+      <h1>Select year</h1>
+      <div>
+        <div id="Second">
+
+          <select id="Sec">
+            <option value="none" selected disabled hidden> Second Year </option>
+            <option value="CSI1-1"> CSI1-1 </option>
+            <option value="CSI1-2"> CSI1-2 </option>
+            <option value="CSI1-3"> CSI1-3 </option>
+          </select>
+
+        </div>
+
+        <div id="Third">
+
+          <select id="Thi">
+            <option value="none" selected disabled hidden> Third Year </option>
+            <option value="CSI1-1"> CSI1-1 </option>
+            <option value="CSI1-2"> CSI1-2 </option>
+            <option value="CSI1-3"> CSI1-3 </option>
+          </select>
+        </div>
+      </div>
+      <a href="homepage.html"> <input id="Login" type="button" value="Next"></a>
+    </div>
+  </center>
+
+</body>
+</html>

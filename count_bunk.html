@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: small;
+        }
+
+        .Csit-1,
+        .Csit-2,
+        .Csit-3 {
+
+            background-color: white;
+            /* color:white; */
+            height: 100px;
+            width: 200px;
+            border-radius: 10px;
+
+            box-shadow: 3px 1px 3px lightgray, -1px 1px 3px lightgray, 1px 1px 3px lightgray;
+        }
+
+        .box {
+            background-image: linear-gradient(to bottom, rgb(67, 67, 202), white);
+        }
+
+
+        a {
+            color: rgb(67, 67, 202);
+        }
+
+        .Year,
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+
+        .piechart {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: conic-gradient(rgb(69, 54, 196) 70deg, rgb(149, 125, 245) 0 235deg, rgb(150, 67, 223) 0);
+        }
+
+        h1 {
+            font-size: large;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="box">
+        <center>
+            <div class="Year">
+                <br>
+                <h1>
+                    <label for="Rad1">2nd Year:</label>
+                    <input id="Rad1" type="radio" name="same" />
+
+                    <label for="Rad2">3rd Year:</label>
+                    <input id="Rad2" type="radio" name="same" />
+                </h1>
+                <br>
+            </div>
+
+
+            <div class="Csit-1" id="One">
+
+                <h3>CSIT 1</h3>
+                <h5>
+                    <span>
+                        Count: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Bunk:
+                    </span>
+                </h5>
+                <a href="">View Attendance</a>
+
+            </div>
+            <br>
+
+            <div class="Csit-2" id="Two">
+                <h3>CSIT 2</h3>
+                <h5>
+                    <span>
+                        Count: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Bunk:
+                    </span>
+                </h5>
+                <a href="">View Attendance</a>
+            </div>
+            <br>
+
+            <div class="Csit-3" id="Three">
+                <h3>CSIT 3</h3>
+                <h5>
+                    <span>
+                        Count: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Bunk:
+                    </span>
+                </h5>
+                <a href="">View Attendance</a>
+            </div>
+
+            <br><br>
+
+            <div class="piechart"> </div>
+
+            <br><br>
+
+
+
+        </center>
+    </div>
+    <script>function showTime() {
+            document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+        }
+
+        showTime();
+
+        setInterval(function () {
+            showTime();
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Schedule</title>
+    <!-- Add Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Custom CSS -->
+    <style>
+        /* Style for the lecture and subject columns */
+        .container {
+            padding: 20px;
+        }
+            body{
+                background-color: #e8e8e8;
+            }      
+                
+            h3{
+                background-color: #e8e8e8;
+                color: #445fd2;
+                font-size: 30px
+            }
+        .table {
+            background-color: #445fd2;
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: #445fd2;
+        }
+
+        .table th,
+        .table td {
+            background-color: white;
+            color: black;
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #f8f9ff;
+        }
+
+        .table thead th {
+            background-color: #f5f6ff;
+            vertical-align: bottom;
+            border-bottom: 0px solid white;
+            background-color: #ffffff;
+        }
+
+       
+        
+
+        .hidden {
+            background-color: #ffffff;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <br> <center><h3>Time table</h3></center><br>
+    <center>
+        <div class="day">
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTable('tableMon')">Mon</button>
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTable('tableTue')" >Tue</button>
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTable('tableWed')">Wed</button>
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTable('tableThur')">Thur</button>
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTable('tableFri')">Fri</button>
+        
+        
+        </div>
+    </center>
+<center>
+    <div class="container mt-4">
+       <center> <table class="table hidden" id="tableMon">
+            <thead>
+                <tr style="color: white;">
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: white;">
+                    <td>10:30 - 11:20</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #Ffdb58; color: white; border: transparent;">Cyber Security</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>11:20 - 01:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #fe759c; color: white; border: transparent; ">Computer Networking</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>01:50 - 03:30</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #Ff8040; color: white; border: transparent;">Minor Project</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>03:30 - 04:15</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #5dbb63; color: white; border: transparent;">CDC</button></a>
+                    </td>
+                </tr>
+                <tr style="border-color: antiquewhite;">
+                    <td>04:15 - 05:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #9867c5; color: white; border: transparent;">Operating System</button></a><br><br>
+                    </td>
+                </tr>
+                <hr >
+            </tbody>
+            <tfoot>
+                
+                <tr style="color: white;">
+                    <td colspan="2">
+                        <a href="Atable.html"><button style=" width: 100%;height: 40px; border-radius: 3px; background-color: #445fd2; color: white; border: transparent;">View total attendance</button></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+<!-- ---------------------------------------Tuesday----------------------------------------------->
+
+
+        <table class="table hidden" id="tableTue">
+            <thead>
+                <tr style="color: white;">
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: white;">
+                    <td>10:30 - 11:20</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #FDD017; color: white; border: transparent;">Computer Network</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>11:20 - 12:10</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #FDD017; color: white; border: transparent;">CDC</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>12:10 - 01:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #FDD017; color: white; border: transparent;">Operating System</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>01:50 - 02:40</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #FDD017; color: white; border: transparent;">TOC</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>04:15 - 05:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%; height: 40px; border-radius: 10px; background-color: #FDD017; color: white; border: transparent;">Cyber </button></a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="color: white;">
+                    <td colspan="2">
+                        <a href="Atable.html"><button style=" width: 90%;">View total attendance</button></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- ---------------------------------------Wednesday----------------------------------------------->
+    
+        <table class="table hidden" id="tableWed">
+            <thead>
+                <tr style="color: white;">
+                    <th>Time</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: white;">
+                    <td>10:30 - 11:20</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%;">Cyber Security</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>11:20 - 01:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%;">Computer Networking</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>01:50 - 03:30</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%;">Minor Project</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>03:30 - 04:15</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%;">CDC</button></a>
+                    </td>
+                </tr>
+                <tr style="color: white;">
+                    <td>04:15 - 05:00</td>
+                    <td class="btn-column">
+                        <a href="apage.html"><button style=" width: 100%;">Operating System</button></a>
+                    </td>
+                </tr style="color: white;">
+            </tbody>
+            <tfoot>
+                <tr style="color: white;">
+                    <td colspan="2">
+                        <a href="Atable.html"><button style=" width: 90%;">View total attendance</button></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <!--------------------------------------------------------thursday------------------------>
+    <!-- -------------------------------------------------------------------------------------->
+
+
+    <table class="table hidden" id="tableThur">
+        <thead>
+            <tr style="color: white;">
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr style="color: white;">
+                <td>10:30 - 11:20</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Cyber Security</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>11:20 - 01:00</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Computer Networking</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>01:50 - 03:30</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Minor Project</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>03:30 - 04:15</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">CDC</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>04:15 - 05:00</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Operating System</button></a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <a href="Atable.html"><button style=" width: 90%;">View total attendance</button></a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- ---------------------------------------Friday--------------------------------------------->
+
+
+    <table class="table hidden" id="tableFri">
+        <thead>
+            <tr style="color: white;">
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="color: white;">
+                <td>10:30 - 11:20</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Cyber Security</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>11:20 - 01:00</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Computer Networking</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>01:50 - 03:30</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Minor Project</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>03:30 - 04:15</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">CDC</button></a>
+                </td>
+            </tr>
+            <tr style="color: white;">
+                <td>04:15 - 05:00</td>
+                <td class="btn-column">
+                    <a href="apage.html"><button style=" width: 100%;">Operating System</button></a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <a href="Atable.html"><button style=" width: 90%;">View total attendance</button></a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    </div>
+</center>
+
+    <!-- Include Bootstrap JS (optional, for some Bootstrap features) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+            <script>
+    let activeTableId = null;
+
+    function toggleTable(tableId) {
+        const table = document.getElementById(tableId);
+        if (activeTableId === tableId) {
+            // If the clicked table is already active, hide it
+            table.classList.add("hidden");
+            activeTableId = null;
+        } else {
+            // If another table is active, hide it
+            if (activeTableId !== null) {
+                const activeTable = document.getElementById(activeTableId);
+                activeTable.classList.add("hidden");
+            }
+            // Show the clicked table
+            table.classList.remove("hidden");
+            activeTableId = tableId;
+        }
+    }
+    </script>
+</body>
+</html>
